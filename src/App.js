@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import MainLayout from './layout/Mainlayout';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
+import GamesPage from './pages/GamesPage';
+import TrailerPage from './pages/TrailerPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -11,7 +13,7 @@ function ScrollToTop() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
-}
+};
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           >
             <Route index element={<Home />} />
             <Route path="*" element={<NotFound />} />
+            <Route path='/games' element={<GamesPage />} />
+            <Route path='/trailer' element={<TrailerPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

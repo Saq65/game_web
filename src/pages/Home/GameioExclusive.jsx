@@ -113,8 +113,8 @@ function GameioExclusive() {
                 >
                     {exclusiveGames.map((game) => (
                         <SwiperSlide key={game.id}>
-                            <div className="bg-[#1A1A22] rounded-xl overflow-hidden border border-gray-800  transition-all duration-300">
-                                <div className="relative h-40">
+                            <div className="bg-[#1A1A22] rounded-xl overflow-hidden border border-gray-800 w-[94%] transition-all duration-300">
+                                <div className="relative h-51">
                                     <img
                                         src={game.image}
                                         alt={game.title}
@@ -125,7 +125,7 @@ function GameioExclusive() {
                                             Live
                                         </div>
                                     )}
-                                    <div className="absolute bottom-0 right-0 bg-yellow-500 text-black px-4 py-2 font-bold clip-badge">
+                                    <div className="absolute -bottom-5 right-0 bg-yellow-500 text-black px-4 py-2 font-bold clip-badge">
                                         Entry: {game.entry}
                                     </div>
                                 </div>
@@ -158,14 +158,36 @@ function GameioExclusive() {
                 </Swiper>
             </div>
 
-
             <div>
                 <HowPlay />
             </div>
 
-
             <div>
                 <News />
+            </div>
+
+            <div className="w-full px-4 py-8">
+                <div
+                    className="text-white rounded-xl bg-cover bg-center w-full max-w-6xl mx-auto bg-no-repeat overflow-hidden"
+                    style={{ backgroundImage: "url('./assets/home4.webp')" }}>
+                    <div className="bg-black/50 ">
+                        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-6 px-6 py-12 lg:py-16">
+                            <div className="text-center lg:text-left max-w-xl">
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+                                    Ready To Start Your Journey?
+                                </h2>
+                                <p className="text-base sm:text-lg lg:text-xl">
+                                    Stop Scrolling, Start Playing. Create your account now and earn 500 coins
+                                </p>
+                            </div>
+                            <div className="flex-shrink-0">
+                                <button className="bg-yellow-400 hover:bg-green-500 px-8 py-3 font-bold text-black rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+                                    Login Now!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <style>{`

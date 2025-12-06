@@ -28,9 +28,9 @@ function ProfileCard() {
     };
 
     useEffect(() => {
-        animateCount(28328, setProfileCount, 2000);
-        animateCount(383, setGameCount, 2000);
-        animateCount(2956, setRewardCount, 2000);
+        animateCount(28328, setProfileCount, 5000);
+        animateCount(383, setGameCount, 5000);
+        animateCount(2956, setRewardCount, 5000);
     }, []);
 
     const formatNumber = (num) => {
@@ -116,7 +116,6 @@ function ProfileCard() {
             title: "Cyborg",
             image: "./assets/games-slider1/browse-game-img-14.webp"
         }
-
         ,
         {
             id: 15,
@@ -159,11 +158,24 @@ function ProfileCard() {
             title: "Cyberpunk",
             image: "./assets/games-slider1/browse-game-img-21.webp"
         }
+        ,
+        {
+            id: 22,
+            title: "Cyberpunk",
+            image: "./assets/games-slider1/browse-game-img-22.webp"
+        }
+        ,
+        {
+            id: 24,
+            title: "Cyberpunk",
+            image: "./assets/games-slider1/browse-game-img-24.webp"
+        }
     ];
 
     const trendingGames = allGames.slice(0, 7);
     const newReleaseGames = allGames.slice(8, 14);
     const Racing = allGames.slice(15, 21);
+    const Multi = allGames.slice(17, 24)
 
     return (
         <>
@@ -173,7 +185,10 @@ function ProfileCard() {
                 .swiper-button-prev-release:hover,
                 .swiper-button-next-release:hover,
                 .swiper-button-prev-racing:hover,
-                .swiper-button-next-racing:hover {
+                .swiper-button-next-racing:hover,
+                .swiper-button-prev-multi:hover,
+                .swiper-button-next-multi:hover
+                 {
                     transform: scale(1.1);
                 }
             `}</style>
@@ -181,7 +196,7 @@ function ProfileCard() {
                 <div className='absolute z-10 top-2 md:-top-16 lg:-top-16 left-1/2 -translate-x-1/2 w-full px-4 '>
                     <div className="flex items-center justify-center">
                         <div className='flex items-center gap-5 flex-wrap'>
-                            <div className="card bg-[#0a0a0a] w-full sm:w-[340px] rounded-[12px] h-[132px] flex items-center px-6 border border-gray-800 hover:border-yellow-500 transition-all duration-300">
+                            <div className="card cursor-pointer bg-[#0a0a0a] w-full sm:w-[340px] rounded-[12px] h-[132px] flex items-center px-6 border border-gray-800 hover:border-yellow-500 transition-all duration-300">
                                 <div className='flex items-center gap-4'>
                                     <div className='bg-yellow-500/20 p-3 rounded-lg'>
                                         <FaUser className='text-yellow-500 text-3xl' />
@@ -193,7 +208,7 @@ function ProfileCard() {
                                 </div>
                             </div>
 
-                            <div className="card bg-[#0a0a0a] w-full sm:w-[340px] rounded-[12px] h-[130px] flex items-center px-6 border border-gray-800 hover:border-yellow-500 transition-all duration-300">
+                            <div className="card cursor-pointer bg-[#0a0a0a] w-full sm:w-[340px] rounded-[12px] h-[130px] flex items-center px-6 border border-gray-800 hover:border-yellow-500 transition-all duration-300">
                                 <div className='flex items-center gap-4'>
                                     <div className='bg-yellow-500/20 p-3 rounded-lg'>
                                         <FaGamepad className='text-yellow-500 text-3xl' />
@@ -205,7 +220,7 @@ function ProfileCard() {
                                 </div>
                             </div>
 
-                            <div className="card bg-[#0a0a0a] w-full sm:w-[340px] rounded-[12px] h-[130px] flex items-center px-6 border border-gray-800 hover:border-yellow-500 transition-all duration-300">
+                            <div className="card cursor-pointer bg-[#0a0a0a] w-full sm:w-[340px] rounded-[12px] h-[130px] flex items-center px-6 border border-gray-800 hover:border-yellow-500 transition-all duration-300">
                                 <div className='flex items-center gap-4'>
                                     <div className='bg-yellow-500/20 p-3 rounded-lg'>
                                         <FaGift className='text-yellow-500 text-3xl' />
@@ -422,7 +437,7 @@ function ProfileCard() {
                                 {Racing.map((game) => (
                                     <SwiperSlide key={game.id}>
                                         <div className='group cursor-pointer'>
-                                            <div className='relative overflow-hidden  rounded-xl transform transition-all duration-300 hover:scale-70 border border-gray-800 hover:border-yellow-500'>
+                                            <div className='relative overflow-hidden rounded-xl transform transition-all duration-300 hover:scale-70 border border-gray-800 hover:border-yellow-500'>
                                                 <img
                                                     src={game.image}
                                                     alt={game.title}
@@ -452,12 +467,12 @@ function ProfileCard() {
                                     <button className='bg-[#3a3f5c] hover:bg-[#2DCB2A] text-white px-6 py-2 rounded-lg transition-all duration-300'>
                                         View All
                                     </button>
-                                    <button className='swiper-button-prev-racing bg-[#3a3f5c] hover:bg-[#2DCB2A] w-12 h-10 rounded-lg flex items-center justify-center transition-all duration-300'>
+                                    <button className='swiper-button-prev-multi bg-[#3a3f5c] hover:bg-[#2DCB2A] w-12 h-10 rounded-lg flex items-center justify-center transition-all duration-300'>
                                         <span className='text-white text-xl'>
                                             <IoIosArrowBack size={20} color='#fff' />
                                         </span>
                                     </button>
-                                    <button className='swiper-button-next-racing bg-[#3a3f5c] hover:bg-[#2DCB2A] w-12 h-10 rounded-lg flex items-center justify-center transition-all duration-300'>
+                                    <button className='swiper-button-next-multi bg-[#3a3f5c] hover:bg-[#2DCB2A] w-12 h-10 rounded-lg flex items-center justify-center transition-all duration-300'>
                                         <IoIosArrowForward size={20} color='#fff' />
                                     </button>
                                 </div>
@@ -468,8 +483,8 @@ function ProfileCard() {
                                 spaceBetween={30}
                                 slidesPerView={1}
                                 navigation={{
-                                    prevEl: '.swiper-button-prev-racing',
-                                    nextEl: '.swiper-button-next-racing',
+                                    prevEl: '.swiper-button-prev-multi',
+                                    nextEl: '.swiper-button-next-multi',
                                 }}
                                 loop={true}
                                 breakpoints={{
@@ -492,7 +507,7 @@ function ProfileCard() {
                                 }}
                                 className="trending-swiper"
                             >
-                                {Racing.map((game) => (
+                                {Multi.map((game) => (
                                     <SwiperSlide key={game.id}>
                                         <div className='group cursor-pointer'>
                                             <div className='relative overflow-hidden rounded-xl transform transition-all duration-300 hover:scale-70 border border-gray-800 hover:border-yellow-500'>

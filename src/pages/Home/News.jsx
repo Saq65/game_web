@@ -83,7 +83,7 @@ function News() {
                 >
                     {newsData.map((news) => (
                         <SwiperSlide key={news.id}>
-                            <div className="bg-gradient-to-br from-[#1a1a2e] to-[#16162a] rounded-2xl p-8 border border-gray-700 hover:border-yellow-500 transition-all duration-300 min-h-[300px] max-w-[350px] flex flex-col relative group">
+                            <div className="bg-gradient-to-br from-[#1a1a2e] to-[#16162a] rounded-2xl p-8 border border-gray-700 hover:border-yellow-500 transition-all duration-300 min-h-[300px] max-w-[350px] cursor-pointer flex flex-col relative group">
                                 <div className="absolute top-6 right-6 text-gray-600 group-hover:text-purple-500 transition-colors duration-300">
                                     <FaQuoteRight size={60} className="opacity-20" />
                                 </div>
