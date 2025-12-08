@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function ProfileCard() {
 
@@ -170,7 +171,9 @@ function ProfileCard() {
     const trendingGames = allGames.slice(0, 7);
     const newReleaseGames = allGames.slice(8, 14);
     const Racing = allGames.slice(15, 21);
-    const Multi = allGames.slice(17, 24)
+    const Multi = allGames.slice(17, 24);
+
+    const navigate = useNavigate();
 
     return (
         <>
@@ -285,7 +288,7 @@ function ProfileCard() {
                             >
                                 {trendingGames.map((game) => (
                                     <SwiperSlide key={game.id}>
-                                        <div className='group cursor-pointer'>
+                                        <div className='group cursor-pointer' onClick={()=>navigate('/signin')}>
                                             <div className='relative overflow-hidden  rounded-xl transform transition-all duration-300 hover:scale-70 border border-gray-800 hover:border-yellow-500'>
                                                 <img
                                                     src={game.image}
@@ -358,7 +361,7 @@ function ProfileCard() {
                             >
                                 {newReleaseGames.map((game) => (
                                     <SwiperSlide key={game.id}>
-                                        <div className='group cursor-pointer'>
+                                        <div className='group cursor-pointer' onClick={()=>navigate('/signin')}>
                                             <div className='relative overflow-hidden  rounded-xl transform transition-all duration-300 hover:scale-70 border border-gray-800 hover:border-yellow-500'>
                                                 <img
                                                     src={game.image}
@@ -431,7 +434,7 @@ function ProfileCard() {
                             >
                                 {Racing.map((game) => (
                                     <SwiperSlide key={game.id}>
-                                        <div className='group cursor-pointer'>
+                                        <div className='group cursor-pointer' onClick={()=>navigate('/signin')}>
                                             <div className='relative overflow-hidden rounded-xl transform transition-all duration-300 hover:scale-70 border border-gray-800 hover:border-yellow-500'>
                                                 <img
                                                     src={game.image}
@@ -505,7 +508,7 @@ function ProfileCard() {
                             >
                                 {Multi.map((game) => (
                                     <SwiperSlide key={game.id}>
-                                        <div className='group cursor-pointer'>
+                                        <div className='group cursor-pointer' onClick={()=>navigate('/signin')}>
                                             <div className='relative overflow-hidden rounded-xl transform transition-all duration-300 hover:scale-70 border border-gray-800 hover:border-yellow-500'>
                                                 <img
                                                     src={game.image}
