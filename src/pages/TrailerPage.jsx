@@ -2,18 +2,18 @@ import { Play } from 'lucide-react'
 
 function TrailerPage() {
     const trailers = [
-        { id: 1, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 2, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 3, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 4, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 5, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 6, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 7, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 8, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 9, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 10, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 11, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 12, title: "Archery Master", image: "./assets/video.webp" },
+        { id: 1, title: "Title", image: "./assets/video.webp" },
+        { id: 2, title: "Title", image: "./assets/video.webp" },
+        { id: 3, title: "Title", image: "./assets/video.webp" },
+        { id: 4, title: "Title", image: "./assets/video.webp" },
+        { id: 5, title: "Title", image: "./assets/video.webp" },
+        { id: 6, title: "Title", image: "./assets/video.webp" },
+        { id: 7, title: "Title", image: "./assets/video.webp" },
+        { id: 8, title: "Title", image: "./assets/video.webp" },
+        { id: 9, title: "Title", image: "./assets/video.webp" },
+        { id: 10, title: "Title", image: "./assets/video.webp" },
+        { id: 11, title: "Title", image: "./assets/video.webp" },
+        { id: 12, title: "Title", image: "./assets/video.webp" },
     ];
 
     const handlePlay = (id) => {
@@ -21,7 +21,7 @@ function TrailerPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#0a0a0f]">
+        <div className="min-h-screen bg-[#0a0a0f] ">
             <div
                 className="text-white max-h-[420px] min-h-[320px] p-8 bg-cover bg-center w-full mx-auto bg-no-repeat overflow-hidden flex items-center justify-center"
                 style={{ backgroundImage: "url('/assets/banner-about-bg.webp')" }}
@@ -40,7 +40,7 @@ function TrailerPage() {
                 </div>
             </div>
 
-            <div className="py-16 px-4 bg-[#181720]">
+            <div className="py-[150px] px-4 bg-[#181720]">
 
                   <div className="mb-12">
                     <h2 className="text-center text-3xl font-bold text-white">

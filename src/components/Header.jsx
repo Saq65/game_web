@@ -116,17 +116,18 @@ function Header() {
                                 Trailer
                             </li>
 
-                            <li
+                             <li
                                 className={`block transition-colors duration-200 font-medium py-2 ${
-                                    isActive('/videos') ? "text-yellow-400" : "text-white hover:text-yellow-400"
+                                    isActive('/trailer') ? "text-yellow-400" : "text-white hover:text-yellow-400"
                                 }`}
                                 onClick={() => {
                                     navigate('/video');
                                     setMenuOpen(false);
                                 }}
                             >
-                                Videos
+                                Video
                             </li>
+
                             <li className="pt-2">
                                 <button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
                                     Sign in

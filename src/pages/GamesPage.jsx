@@ -52,7 +52,7 @@ function GamesPage() {
                 </div>
             </div>
 
-            <div className="py-12 bg-[#181820] min-h-screen">
+            <div className="py-[150px] bg-[#181820] min-h-screen">
                 <div className="mb-12">
                     <h2 className="text-center text-3xl font-bold text-white">
                         Browse <span className="text-yellow-500">Games</span>

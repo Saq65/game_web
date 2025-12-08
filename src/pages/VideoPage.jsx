@@ -3,18 +3,18 @@ import { Play } from "lucide-react";
 function VideoPage() {
 
       const trailers = [
-        { id: 1, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 2, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 3, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 4, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 5, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 6, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 7, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 8, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 9, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 10, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 11, title: "Archery Master", image: "./assets/video.webp" },
-        { id: 12, title: "Archery Master", image: "./assets/video.webp" },
+        { id: 1, title: "Title", image: "./assets/video.webp" },
+        { id: 2, title: "Title", image: "./assets/video.webp" },
+        { id: 3, title: "Title", image: "./assets/video.webp" },
+        { id: 4, title: "Archry Master", image: "./assets/video.webp" },
+        { id: 5, title: "Archry Master", image: "./assets/video.webp" },
+        { id: 6, title: "Archry Master", image: "./assets/video.webp" },
+        { id: 7, title: "Archry Master", image: "./assets/video.webp" },
+        { id: 8, title: "Archry Master", image: "./assets/video.webp" },
+        { id: 9, title: "Archry Master", image: "./assets/video.webp" },
+        { id: 10, title: "Arcery Master", image: "./assets/video.webp" },
+        { id: 11, title: "Arcery Master", image: "./assets/video.webp" },
+        { id: 12, title: "Arcery Master", image: "./assets/video.webp" },
     ];
 
     const handlePlay = (id) => {
@@ -42,7 +42,7 @@ function VideoPage() {
                 </div>
             </div>
 
-         <div className="py-16 px-4 bg-[#181720]">
+         <div className="py-[150px]  px-4 bg-[#181720]">
 
                   <div className="mb-12">
                     <h2 className="text-center text-3xl font-bold text-white">

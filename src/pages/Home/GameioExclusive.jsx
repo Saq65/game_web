@@ -7,13 +7,11 @@ import { useRef } from 'react';
 import { FaUser } from "react-icons/fa";
 import HowPlay from "./HowPlay";
 import News from "./News";
-import { useNavigate } from "react-router-dom";
+
 
 function GameioExclusive() {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
-
-    const navigate = useNavigate();
 
     const exclusiveGames = [
         {
@@ -69,8 +67,9 @@ function GameioExclusive() {
     ];
 
     return (
-        <div className="px-4 py-8" style={{
-            background: 'linear-gradient(to bottom, #080618 0%, #181820 20%, #181820 50%, #181820 80%, #080618 100%)'
+        <div className="px-4 py-10" style={{
+            background: 'linear-gradient(to bottom, #080618 0%, #181820 20%, #181820 50%, #181820 80%, #080618 100%)',
+            paddingBottom:'100px'
         }}>
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-center mb-6">
@@ -169,7 +168,7 @@ function GameioExclusive() {
                 <News />
             </div>
 
-            <div className="w-full px-4 py-8">
+            {/* <div className="w-full px-4 py-8">
                 <div
                     className="text-white rounded-xl bg-cover bg-center w-full max-w-6xl mx-auto bg-no-repeat overflow-hidden"
                     style={{ backgroundImage: "url('./assets/home4.webp')" }}>
@@ -201,7 +200,7 @@ function GameioExclusive() {
                 .gameio-swiper .swiper-slide {
                     height: auto;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     );
 }
