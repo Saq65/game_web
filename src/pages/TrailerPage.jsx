@@ -69,9 +69,9 @@ function TrailerPage() {
                                 </div>
 
                                 <div className="w-full">
-                                    <p className="text-center text-lg font-semibold text-white group-hover:text-yellow-400 transition-colors">
+                                            <h3 className='text-white font-[Roboto Mono] text-xl font-[600] mt-4 text-center'>
                                         {trailer.title}
-                                    </p>
+                                    </h3>
                                 </div>
 
                                 <button

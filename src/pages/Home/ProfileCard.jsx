@@ -104,12 +104,7 @@ function ProfileCard() {
             title: "Spartan",
             image: "./assets/games-slider1/browse-game-img-12.webp"
         }
-        ,
-        {
-            id: 13,
-            title: "Spartan",
-            image: "./assets/games-slider1/browse-game-img-12.webp"
-        }
+      
         ,
         {
             id: 14,
@@ -241,9 +236,9 @@ function ProfileCard() {
                     <div className='w-full py-12 px-4'>
                         <div className='max-w-6xl mx-auto'>
                             <div className='column   lg:flex sm:flex md:flex xl:flex justify-between items-center mb-8'>
-                                <p className='text-white text-[25px] md:text-3xl lg:text-3xl font-bold uppercase'>
-                                    See What's Trending
-                                </p>
+                            <p className={`text-white font-[Open Sans] text-[25px] md:text-3xl lg:text-3xl font-[600] uppercase`}>
+  See What's Trending
+</p>
                                 <div className='flex items-center gap-3'>
                                     <button className='bg-[#3a3f5c] hover:bg-[#2DCB2A] text-white px-6 py-2 rounded-lg transition-all duration-300'>
                                         View All
@@ -299,7 +294,7 @@ function ProfileCard() {
                                                 />
                                                 <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
                                             </div>
-                                            <h3 className='text-white text-xl font-bold mt-4 text-center'>
+                                            <h3 className='text-white font-[Roboto Mono] text-xl font-[600] mt-4 text-center'>
                                                 {game.title}
                                             </h3>
                                         </div>
@@ -314,7 +309,7 @@ function ProfileCard() {
                     <div className='w-full py-0 sm:py-10 md:py-10 lg:py-10 xl:py-10 px-4'>
                         <div className='max-w-6xl mx-auto'>
                             <div className='column   lg:flex sm:flex md:flex xl:flex justify-between items-center mb-8'>
-                                <p className='text-white text-[25px] md:text-3xl lg:text-3xl font-bold uppercase'>
+                                <p className='text-white font-[Open Sans] text-[25px] md:text-3xl lg:text-3xl font-[600] uppercase'>
                                     New Release
                                 </p>
                                 <div className='flex items-center gap-3'>
@@ -372,7 +367,7 @@ function ProfileCard() {
                                                 />
                                                 <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
                                             </div>
-                                            <h3 className='text-white text-xl font-bold mt-4 text-center'>
+                                            <h3 className='text-white font-[Roboto Mono] text-xl font-[600] mt-4 text-center'>
                                                 {game.title}
                                             </h3>
                                         </div>
@@ -387,7 +382,7 @@ function ProfileCard() {
                     <div className='w-full py-0 sm:py-10 md:py-10 lg:py-10 xl:py-10 px-4'>
                         <div className='max-w-6xl mx-auto'>
                             <div className='column   lg:flex sm:flex md:flex xl:flex justify-between items-center mb-8'>
-                                <p className='text-white text-[25px] md:text-3xl lg:text-3xl font-bold uppercase'>
+                                <p className='text-white font-[Open Sans] text-[25px] md:text-3xl lg:text-3xl font-[600] uppercase'>
                                     Racing
                                 </p>
                                 <div className='flex items-center gap-3'>
@@ -441,11 +436,12 @@ function ProfileCard() {
                                                 <img
                                                     src={game.image}
                                                     alt={game.title}
-                                                    className='w-full img-fluid h-auto object-cover'
+                                                    className='w-full img-fluid object-cover'
+                                                    style={{border:'1px solid rgb(61, 61, 113)'}}
                                                 />
                                                 <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
                                             </div>
-                                            <h3 className='text-white text-xl font-bold mt-4 text-center'>
+                                            <h3 className='text-white font-[Roboto Mono] text-xl font-[600] mt-4 text-center'>
                                                 {game.title}
                                             </h3>
                                         </div>
@@ -460,7 +456,7 @@ function ProfileCard() {
                     <div className='w-full py-0 sm:py-10 md:py-10 lg:py-10 xl:py-10 px-4'>
                         <div className='max-w-6xl mx-auto'>
                             <div className='column   lg:flex sm:flex md:flex xl:flex justify-between items-center mb-8'>
-                                <p className='text-white text-[25px] md:text-3xl lg:text-3xl font-bold uppercase'>
+                                <p className='text-white font-[Open Sans] text-[25px] md:text-3xl lg:text-3xl font-[600] uppercase'>
                                     Mind-mining games
                                 </p>
                                 <div className='flex items-center gap-3'>
@@ -518,7 +514,7 @@ function ProfileCard() {
                                                 />
                                                 <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
                                             </div>
-                                            <h3 className='text-white text-xl font-bold mt-4 text-center'>
+                                            <h3 className='text-white font-[Roboto Mono] text-xl font-[600] mt-4 text-center'>
                                                 {game.title}
                                             </h3>
                                         </div>

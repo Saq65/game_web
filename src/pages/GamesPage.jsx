@@ -77,9 +77,9 @@ function GamesPage() {
                                     </div>
                                     
                                     <div className="mt-4 text-center">
-                                        <p className="text-white font-poppins text-lg font-medium  transition-colors duration-300">
+                                            <h3 className='text-white font-[Roboto Mono] text-xl font-[600] mt-4 text-center'>
                                             {res.title}
-                                        </p>
+                                        </h3>
                                     </div>
                                 </div>
                             ))

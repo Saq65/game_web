@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import GamesPage from './pages/GamesPage';
 import TrailerPage from './pages/TrailerPage';
+import SignIn from './pages/auth/SignIn';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
             <Route path='/games' element={<GamesPage />} />
             <Route path='/trailer' element={<TrailerPage />} />
+            <Route path='/signin' element={<SignIn />} />
           </Route>
         </Routes>
       </BrowserRouter>

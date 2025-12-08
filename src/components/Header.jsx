@@ -60,7 +60,7 @@ function Header() {
                             <BiSearch className="w-6 h-6" />
                         </button>
 
-                        <button className="hidden sm:block bg-yellow-500 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
+                        <button onClick={()=>navigate('/signin')} className="hidden sm:block bg-yellow-500 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium">
                             Sign in
                         </button>
 

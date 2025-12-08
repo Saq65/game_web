@@ -7,10 +7,13 @@ import { useRef } from 'react';
 import { FaUser } from "react-icons/fa";
 import HowPlay from "./HowPlay";
 import News from "./News";
+import { useNavigate } from "react-router-dom";
 
 function GameioExclusive() {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+
+    const navigate = useNavigate();
 
     const exclusiveGames = [
         {
@@ -71,7 +74,7 @@ function GameioExclusive() {
         }}>
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-center mb-6">
-                    <h3 className="text-white text-[17px] lg:text-2xl md:text-3xl font-bold">Gameio Exclusive Game</h3>
+                    <h3 className="text-white font-[Open Sans] text-[20px] md:text-3xl lg:text-3xl font-[600] uppercase">Gameio Exclusive Game</h3>
                     <div className="flex items-center gap-3">
                         <button ref={prevRef} className="bg-gray-700 hover:bg-[#2DCB2A] w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300">
                             <IoIosArrowBack size={20} color="#fff" />
@@ -181,7 +184,7 @@ function GameioExclusive() {
                                 </p>
                             </div>
                             <div className="flex-shrink-0">
-                                <button className="bg-yellow-400 hover:bg-green-500 px-8 py-3 font-bold text-black rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+                                <button onClick={()=>navigate('/signin')} className="bg-yellow-400 hover:bg-[#2DCB2A] px-8 py-3 font-bold text-black rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
                                     Login Now!
                                 </button>
                             </div>
