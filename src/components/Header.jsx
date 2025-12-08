@@ -48,7 +48,7 @@ function Header() {
                             Trailer
                         </li>
                         <li
-                            onClick={() => navigate('/videos')}
+                            onClick={() => navigate('/video')}
                             className={getNavLinkClass('/videos')}
                         >
                             Videos
@@ -121,7 +121,7 @@ function Header() {
                                     isActive('/videos') ? "text-yellow-400" : "text-white hover:text-yellow-400"
                                 }`}
                                 onClick={() => {
-                                    navigate('/videos');
+                                    navigate('/video');
                                     setMenuOpen(false);
                                 }}
                             >
