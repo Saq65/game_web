@@ -23,7 +23,7 @@ function HowPlay() {
     ];
 
     return (
-        <div className="bg-[#060417]  mt-20 rounded-[20px] w-[90%] xl:w-[70%] md:w-[70%] lg:w-[70%] mx-auto">
+        <div className="bg-[#060417] overflow-hidden mt-20 h-[350px] rounded-[18px] w-[90%] xl:w-[88%] md:w-[88%] lg:w-[80%] mx-auto">
             <div className="mx-auto p-4 sm:p-0 lg:p-0">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
                     <div className="hidden lg:block xl:block md:block lg:col-span-2 bg-[#060417] flex justify-center lg:justify-start">
@@ -32,7 +32,7 @@ function HowPlay() {
                             <img
                                 src=".\assets\how-play-illus.webp"
                                 alt="Gamer Character"
-                                className="relative w-80 h-80 object-cover rounded-2xl "
+                                className="relative w-80 h-90 object-cover rounded-2xl "
                             />
                         </div>
                     </div>
