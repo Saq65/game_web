@@ -17,7 +17,7 @@ function SignIn() {
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
-      className="min-h-screen relative overflow-hidden">
+      className="min-h-screen relative overflow-hidden p-[100px]">
       
       <div className="absolute inset-0 bg-black/60"></div>
       
